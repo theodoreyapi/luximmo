@@ -1,0 +1,18 @@
+<div class="scroll-area">
+    <i class="bi bi-arrow-up"></i>
+ </div>
+ <!-- Js File -->
+ <script src="{{ asset('') }}assets/js/modernizr.min.js"></script>
+ <script src="{{ asset('') }}assets/js/jquery-3.6.0.min.js"></script>
+ <script src="{{ asset('') }}assets/js/popper.min.js"></script>
+ <script src="{{ asset('') }}assets/js/bootstrap.min.js"></script>
+ <script src="{{ asset('') }}assets/js/owl.carousel.min.js"></script>
+ <script src="{{ asset('') }}assets/js/jquery.nice-select.min.js"></script>
+ <script src="{{ asset('') }}assets/js/jquery.waypoints.min.js"></script>
+ <script src="{{ asset('') }}assets/js/jquery.counterup.min.js"></script>
+ <script src="{{ asset('') }}assets/js/vegas.slider.min.js"></script>
+ <script src="{{ asset('') }}assets/js/mixitup.min.js"></script>
+ <script src="{{ asset('') }}assets/js/lightcase.js"></script>
+ <script src="{{ asset('') }}assets/js/wow.min.js"></script>
+ <script src="{{ asset('') }}assets/js/mobile-menu.js"></script>
+ <script src="{{ asset('') }}assets/js/script.js"></script>
