@@ -10,6 +10,9 @@
     <link rel="icon" href="{{ asset('') }}assets/img/icon.png" type="image/gif" sizes="18x18">
     <link rel="icon" href="{{ asset('') }}assets/img/icon.png" type="image/gif" sizes="20x20">
 
+    <!-- Google Fonts Modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ asset('') }}assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('') }}assets/css/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ asset('') }}assets/css/fontawesome.all.min.css">
@@ -23,6 +26,219 @@
     <link rel="stylesheet" href="{{ asset('') }}assets/style.css">
     <link rel="stylesheet" href="{{ asset('') }}assets/css/responsive.css">
 
+    <!-- Ajout styles personnalisés pour moderniser l'interface -->
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: #f8f9fa;
+            color: #222;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            color: #1a1a2e;
+            letter-spacing: 1px;
+        }
+
+        a {
+            color: #0d6efd;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+
+        .section-headding h2 {
+            color: #ff6f61;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .sc_subtitle span {
+            color: #0d6efd;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+            border-radius: 0 0 18px 18px;
+        }
+
+        .menu ul {
+            gap: 30px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .menu ul li a {
+            font-size: 1.1rem;
+            padding: 8px 18px;
+            border-radius: 20px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .menu ul li a:hover {
+            background: #ff6f61;
+            color: #fff;
+        }
+
+        .video-btn a {
+            background: linear-gradient(135deg, #0d6efd 0%, #ff6f61 100%);
+            color: #fff !important;
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s;
+        }
+
+        .video-btn a:hover {
+            transform: scale(1.1) rotate(8deg);
+            background: linear-gradient(135deg, #ff6f61 0%, #0d6efd 100%);
+        }
+
+        .info-box {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+            transition: transform 0.2s, box-shadow 0.2s;
+            padding: 32px 24px;
+            text-align: center;
+        }
+
+        .info-box:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(255, 111, 97, 0.15);
+            border: 1.5px solid #ff6f61;
+        }
+
+        .info-box .icon img {
+            width: 64px;
+            margin-bottom: 18px;
+        }
+
+        .info-box h2 a {
+            color: #0d6efd;
+        }
+
+        .counter-item {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+            padding: 32px 0;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+
+        .counter-item:hover {
+            box-shadow: 0 8px 32px rgba(13, 110, 253, 0.12);
+        }
+
+        .counter-item .icon {
+            font-size: 2.5rem;
+            color: #ff6f61;
+            margin-bottom: 12px;
+        }
+
+        .counter-item .counter {
+            font-size: 2.2rem;
+            color: #0d6efd;
+        }
+
+        .nav-tabs .nav-link {
+            border: none;
+            background: #fff;
+            color: #0d6efd;
+            border-radius: 20px 20px 0 0;
+            margin-right: 8px;
+            font-weight: 600;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .nav-tabs .nav-link.active,
+        .nav-tabs .nav-link:hover {
+            background: #ff6f61;
+            color: #fff;
+        }
+
+        .category-block-one {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+            padding: 24px 12px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .category-block-one:hover {
+            transform: translateY(-6px) scale(1.04);
+            box-shadow: 0 8px 32px rgba(13, 110, 253, 0.10);
+            border: 1.5px solid #0d6efd;
+        }
+
+        .category-block-one i {
+            font-size: 2rem;
+            color: #ff6f61;
+            margin-bottom: 10px;
+        }
+
+        .category-block-one h4 a {
+            color: #0d6efd;
+        }
+
+        #preloader {
+            background: linear-gradient(135deg, #0d6efd 0%, #ff6f61 100%);
+        }
+
+        .preloader span {
+            background: #fff;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            to {
+                transform: translateY(-16px);
+            }
+        }
+
+        .scroll-area {
+            background: #ff6f61;
+            color: #fff;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            box-shadow: 0 4px 24px rgba(255, 111, 97, 0.15);
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+            z-index: 999;
+        }
+
+        .scroll-area:hover {
+            background: #0d6efd;
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
@@ -283,10 +499,10 @@
                         </div>
                         <div class="content">
                             <div class="title">
-                                <h2 class="counter">255</h2>
-                                <h3>+</h3>
+                                <h2 class="counter" style="color: #000">255</h2>
+                                <h3 style="color: #000">+</h3>
                             </div>
-                            <p>Projets restants</p>
+                            <p style="color: #000">Projets restants</p>
                         </div>
                     </div>
                 </div>
@@ -298,10 +514,10 @@
                         </div>
                         <div class="content">
                             <div class="title">
-                                <h2 class="counter">201</h2>
-                                <h3>+</h3>
+                                <h2 class="counter" style="color: #000">201</h2>
+                                <h3 style="color: #000">+</h3>
                             </div>
-                            <p>Projets terminés</p>
+                            <p style="color: #000">Projets terminés</p>
                         </div>
                     </div>
                 </div>
@@ -313,10 +529,10 @@
                         </div>
                         <div class="content">
                             <div class="title">
-                                <h2 class="counter">100</h2>
-                                <h3>+</h3>
+                                <h2 class="counter" style="color: #000">100</h2>
+                                <h3 style="color: #000">+</h3>
                             </div>
-                            <p></p>
+                            <p style="color: #000"></p>
                         </div>
                     </div>
                 </div>
@@ -328,10 +544,10 @@
                         </div>
                         <div class="content">
                             <div class="title">
-                                <h2 class="counter">25</h2>
-                                <h3>+</h3>
+                                <h2 class="counter" style="color: #000">25</h2>
+                                <h3 style="color: #000">+</h3>
                             </div>
-                            <p>Clients</p>
+                            <p style="color: #000">Clients</p>
                         </div>
                     </div>
                 </div>

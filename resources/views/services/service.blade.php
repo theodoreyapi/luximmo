@@ -5,6 +5,61 @@
 ])
 
 @section('content')
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: #f8f9fa;
+            color: #222;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            color: #1a1a2e;
+            letter-spacing: 1px;
+        }
+        a {
+            color: #0d6efd;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+        .section-headding h2 {
+            color: #ff6f61;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .sc_subtitle span {
+            color: #0d6efd;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .info-box {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+            transition: transform 0.2s, box-shadow 0.2s;
+            padding: 32px 24px;
+            text-align: center;
+        }
+        .info-box:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(255,111,97,0.15);
+            border: 1.5px solid #ff6f61;
+        }
+        .info-box .icon img {
+            width: 64px;
+            margin-bottom: 18px;
+        }
+        .info-box h2 a {
+            color: #0d6efd;
+        }
+        @media (max-width: 991px) {
+            .info-box {
+                padding: 24px 12px;
+            }
+        }
+    </style>
     <!-- Start Services Area -->
     <section class="section-padding-2 section-bg">
         <div class="container">

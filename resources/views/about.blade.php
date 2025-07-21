@@ -5,6 +5,161 @@
 ])
 
 @section('content')
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: #f8f9fa;
+            color: #222;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            color: #1a1a2e;
+            letter-spacing: 1px;
+        }
+        a {
+            color: #0d6efd;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+        .section-headding h2 {
+            color: #ff6f61;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .sc_subtitle span {
+            color: #0d6efd;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .info-box {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+            transition: transform 0.2s, box-shadow 0.2s;
+            padding: 32px 24px;
+            text-align: center;
+        }
+        .info-box:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(255,111,97,0.15);
+            border: 1.5px solid #ff6f61;
+        }
+        .info-box .icon img {
+            width: 64px;
+            margin-bottom: 18px;
+        }
+        .info-box h2 a {
+            color: #0d6efd;
+        }
+        .team-item {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+            padding-bottom: 24px;
+        }
+        .team-item:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(13,110,253,0.10);
+            border: 1.5px solid #0d6efd;
+        }
+        .team-item .thumbnail img {
+            border-radius: 18px 18px 0 0;
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+        .team-social ul {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin: 12px 0 0 0;
+            padding: 0;
+            list-style: none;
+        }
+        .team-social ul li a {
+            color: #0d6efd;
+            font-size: 1.2rem;
+            transition: color 0.2s;
+        }
+        .team-social ul li a:hover {
+            color: #ff6f61;
+        }
+        .testimonial-item {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+            padding: 32px 24px;
+            text-align: center;
+            margin: 0 8px;
+            position: relative;
+        }
+        .testimonial-item .thumbnail img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 16px;
+        }
+        .testimonial-item .btm-big-icon {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            font-size: 2.5rem;
+            color: #ff6f61;
+            opacity: 0.15;
+        }
+        .about-img {
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+        }
+        .about-img img {
+            width: 100%;
+            border-radius: 18px;
+        }
+        .about-vedio .video-btn a {
+            background: linear-gradient(135deg, #0d6efd 0%, #ff6f61 100%);
+            color: #fff !important;
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+            transition: transform 0.2s;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .about-vedio .video-btn a:hover {
+            transform: translate(-50%, -50%) scale(1.1) rotate(8deg);
+            background: linear-gradient(135deg, #ff6f61 0%, #0d6efd 100%);
+        }
+        ul {
+            padding-left: 0;
+            list-style: none;
+        }
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.08rem;
+            display: flex;
+            align-items: center;
+        }
+        ul li i {
+            color: #ff6f61;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+    </style>
     <!-- Start About Area -->
     <section class="about-area section-padding">
         <div class="container">
